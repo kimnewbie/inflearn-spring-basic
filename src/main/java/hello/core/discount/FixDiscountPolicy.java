@@ -1,4 +1,7 @@
-package hello.core.member;
+package hello.core.discount;
+
+import hello.core.member.Grade;
+import hello.core.member.Member;
 
 /**
  * 정액 할인 정책 구현체
