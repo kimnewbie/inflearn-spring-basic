@@ -15,9 +15,12 @@ public class BeanLifeCycleTest {
         ac.close(); //스프링 컨테이너를 종료, ConfigurableApplicationContext 필요
     }
 
+    /**
+     * 설정 정보에 초기화 소멸 메서드 지정
+     */
     @Configuration
     static class LifeCycleConfig {
-        @Bean
+        @Bean(initMethod = "init", destroyMethod = "close")
         public NetworkClient networkClient() {
             NetworkClient networkClient = new NetworkClient();
             networkClient.setUrl("http://hello-spring.dev");
