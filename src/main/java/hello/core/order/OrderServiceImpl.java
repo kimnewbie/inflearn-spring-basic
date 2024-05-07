@@ -11,6 +11,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class OrderServiceImpl implements OrderService {
 
+    // 오직 생성자 주입 방식만 'final'
     private final MemberRepository memberRepository;
     private final DiscountPolicy discountPolicy;
 
