@@ -5,7 +5,6 @@ import jakarta.annotation.PreDestroy;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.Scope;
-
 import static org.assertj.core.api.Assertions.assertThat;
 
 /**
